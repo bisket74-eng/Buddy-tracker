@@ -75,7 +75,7 @@
         const SUPABASE_URL = "https://xnwwngqennvwajlhvclj.supabase.co"; 
         const SUPABASE_ANON_KEY = "sb_publishable_jTMgKMLZhXwLPBJyzMueqA_qf5QXVZ8";
 
-        const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        cconst supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
         // 2. INITIALIZE THE MAP
         // Default view opens up to a broad view of the world until location is loaded
