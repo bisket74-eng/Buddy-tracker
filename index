@@ -94,7 +94,8 @@
 
         // 4. JOIN THE REAL-TIME CHANNEL
         // We create a channel called 'ride-room'. Everyone on the site connects to this same room.
-        const channel = supabase.channel('ride-room', {
+        const channel = supabaseClient.channel('ride-room', {
+
             config: { broadcast: { ack: false, self: false } }
         });
 
